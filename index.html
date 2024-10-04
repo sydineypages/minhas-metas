@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metas Diárias</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="waveWrapper waveAnimation">
+        <div class="waveWrapperInner bgTop">
+            <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+        </div>
+        <div class="waveWrapperInner bgMiddle">
+            <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+        </div>
+        <div class="waveWrapperInner bgBottom">
+            <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+        </div>
+    </div>
+
+    <div class="lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+    <div class="container">
+        <h1>Metas Diárias</h1>
+        <form id="metaForm">
+            <input type="text" id="metaInput" placeholder="Digite sua meta" required>
+            <input type="time" id="metaTime" required>
+            <input type="date" id="metaDate" required>
+            <button type="submit">Adicionar Meta</button>
+        </form>
+
+        <p id="mensagemSucesso" style="display: none;">Meta adicionada com sucesso!</p>
+
+        <div class="menu">
+            <a href="#" id="verMetas">Ver Metas</a>
+            <a href="#" id="verConcluidas">Metas Concluídas</a>
+            <a href="#" id="verNaoConcluidas">Metas Não Concluídas</a>
+            <a href="#" id="verAnteriores">Metas Anteriores</a>
+        </div>
+
+        <div class="main-section">
+            <div id="metaPage">
+                <h2>Metas Adicionadas</h2>
+                <ul id="metaList"></ul>
+            </div>
+
+            <div id="concluidasPage" style="display: none;">
+                <h2>Metas Concluídas</h2>
+                <ul id="metaConcluidasList"></ul>
+            </div>
+
+            <div id="naoConcluidasPage" style="display: none;">
+                <h2>Metas Não Concluídas</h2>
+                <ul id="metaNaoConcluidasList"></ul>
+            </div>
+
+            <div id="anterioresPage" style="display: none;">
+                <h2>Metas Anteriores</h2>
+                <ul id="metaAnterioresList"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
